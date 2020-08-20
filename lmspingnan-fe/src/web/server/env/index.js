@@ -65,7 +65,8 @@ const env = {
   USE_GLOBALIZATION: true,
   HTTP_CUSROMIZE_BUTTON_URL:HTTP_CUSROMIZE_BUTTON_URL,
   HTTP_FILE_SERVER:envConfig.HTTP_FILE_SERVER,
-  GLOBALIZATION_WHITELIST:['/developplatform']
+  GLOBALIZATION_WHITELIST:['/developplatform'],
+  ATTACHMENT_FILE_URL : envConfig.HTTP_FILE_SERVER
 }
 if (process.env.NODE_ENV === 'production') {
   let version, packageVersion;
