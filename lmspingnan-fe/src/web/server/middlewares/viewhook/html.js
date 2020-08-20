@@ -48,6 +48,7 @@ export default function html (pageInfo, content, state) {
       window.__PRINT_META__ = ${JSON.stringify(printMeta)}
       window.__SERVICE_BASEURL__ = "${serviceBaseUrl}"
       window.__configEnv__ = ${JSON.stringify(staticEnv)}
+      window._fileUrl = '${env.ATTACHMENT_FILE_URL || ''}'
     </script>
 
     <script src="${env.HTTP_WORKFLOW_SERVER}/iform_web/s/tpl"></script>
